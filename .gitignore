@@ -1,3 +1,7 @@
 proxy*
 BungeeCord.jar
 plugins/*.jar
+plugins/BungeeEssentials/chat/
+plugins/BungeeEssentials/lib
+plugins/BungeeEssentials/*.db
+plugins/PluginMetrics/
