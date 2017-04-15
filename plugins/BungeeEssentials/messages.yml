@@ -136,8 +136,7 @@ mute:
     exempt: '&cHey, you can''t mute that player!'
     error: '&7{{ PLAYER }} tried to chat while muted!'
 errors:
-  invalid: '&cInvalid arguments provided. Usage: {{ HELP }}{{ HOVER: Click to fill
-    in command }}{{ CLICK: SUG: {{ HELP }} }}'
+  invalid: '&cInvalid arguments provided. Usage: {{ HELP }}{{ HOVER: Click to fill in command }}{{ CLICK: SUG: {{ HELP }} }}'
   notfound: '&cSorry, no player was found.'
   slap: '&cYou are unworthy of slapping people.'
   messages: '&cNobody has messaged you recently.'
@@ -162,9 +161,6 @@ rules:
 - pattern: I hate (this|your) server
   handle: REPLACE
   replacement: I love this server
-- pattern: I hate (this|your) server
-  handle: COMMAND
-  command: send {{ SENDER }} lobby
 bannedwords:
   replace: '*'
   list:
@@ -227,4 +223,4 @@ announcements:
     interval: 60
     message: |-
       Donate to support our server!
-      &f&ndonate.myserver.com
+      &f&shop.nightfallmc.net
