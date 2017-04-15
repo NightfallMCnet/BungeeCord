@@ -45,6 +45,8 @@ permissions:
   - gssentials.slap
   admin:
   - bat.admin
+  - bungeetablistplus.admin
+  - bungeetablistplus.command
   - gssentials.admin.reload
   - gssentials.admin.send
   - gssentials.admin.sendall

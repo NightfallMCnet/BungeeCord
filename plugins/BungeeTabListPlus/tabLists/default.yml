@@ -1,0 +1,120 @@
+# This is the default configuration file of BungeeTabListPlus.
+#
+# Since the configuration of the plugin is quite complex you
+# might want to have a look at the wiki from time to time.
+# 
+# Wiki: https://github.com/CodeCrafter47/BungeeTabListPlus/wiki
+#  Placeholders: https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Placeholders
+#  Examples: https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Examples
+#
+
+# It is possible to have multiple tab list configuration files.
+# BungeeTabListPlus will parse all .yml files it finds in the tabLists directory.
+# Which tab list a player sees depends on the showTo and priority options.
+
+# All player see this tab list
+showTo: "all"
+
+# Examples of alternative options for showTo:
+# showTo: ' ${viewer server} == "Factions" '
+# showTo: ' ${viewer server} == "Factions" or ${viewer server} == "Survival" '
+# showTo: ' ${viewer vault_primary_group} == "Admin" '
+
+# If after evaluating the showTo option of all tab list configs multiple tab lists
+# are visible to a player, he will bw shown the one with the highest priority:
+priority: 18
+
+# Tab list header and footer:
+showHeaderFooter: true
+
+header:
+- '&cWelcome &f${viewer name}'
+- '&eW&celcome &f${viewer name}'
+- '&eWe&clcome &f${viewer name}'
+- '&eWel&ccome &f${viewer name}'
+- '&eWelc&come &f${viewer name}'
+- '&eWelco&cme &f${viewer name}'
+- '&eWelcom&ce &f${viewer name}'
+- '&eWelcome &f${viewer name}'
+- '&cW&eelcome &f${viewer name}'
+- '&cWe&elcome &f${viewer name}'
+- '&cWel&ecome &f${viewer name}'
+- '&cWelc&eome &f${viewer name}'
+- '&cWelco&eme &f${viewer name}'
+- '&cWelcom&ee &f${viewer name}'
+- '&cWelcome &f${viewer name}'
+
+headerAnimationUpdateInterval: 0.2
+
+footer:
+- &bplay.nightfallmc.net
+
+footerAnimationUpdateInterval: 0.5
+
+# We want the tab list to have a fixed size of 60 slots.
+# If you want a dynamic size you need to set type to DYNAMIC_SIZE
+# and you don't need any of the options below it. Have a look at
+# the example in the wiki to see which options you need instead:
+# https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Examples#global-tab-list-dynamic-size
+type: FIXED_SIZE
+size: 40 # 40 = 2 columns, 20 slots per column
+
+# The defaultIcon and defaultPing will be used for all slots for which no other value is
+# explicitely set.
+defaultIcon: colors/dark_gray.png
+defaultPing: 1000
+
+
+# Player sets are required to display players and player counts on the tab list.
+# To display a player count use ${playerset:<name> size}, example: ${playerset:global size}.
+playerSets:
+  # The global player set contains all players
+  global:
+    filter: "true"
+  survival:
+    filter: |-
+      ${player server} == "survival"
+  creative:
+    filter:
+      ${player server} == "creative"
+
+# Here the content of the tab list is configured:
+components:
+- !table
+  columns:
+    0:
+    - {text: "&lInfo", icon: "colors/gold.png", ping: 0}
+    - {text: "", icon: "colors/gold.png", ping: 0}
+    - {text: "", icon: "colors/gold.png", ping: 0}
+    - {text: "&cServer:", icon: "default/server.png", ping: 0}
+    - {text: "&6${viewer server}", icon: "default/server.png", ping: 0}
+    - {text: "", icon: "colors/gold.png", ping: 0}
+    - {text: "&cRank:", icon: "default/rank.png", ping: 0}
+    - {text: "&6${viewer vault_primary_group}", icon: "default/rank.png", ping: 0}
+    - {text: "", icon: "colors/gold.png", ping: 0}
+    - {text: "&cPing:", icon: "default/ping.png", ping: 0}
+    - {text: "&6${viewer ping}ms", icon: "default/ping.png", ping: 0}
+    - {text: "", icon: "colors/gold.png", ping: 0}
+    - {text: "&cPlayers:", icon: "default/players.png", ping: 0}
+    - {text: "&6${playerset:global size}", icon: "default/players.png", ping: 0}
+    - {text: "", icon: "colors/gold.png", ping: 0}
+    - {text: "&cBalance:", icon: "default/balance.png", ping: 0}
+    - {text: "&6${viewer vault_balance}", icon: "default/balance.png", ping: 0}
+    - {text: "", icon: "colors/gold.png", ping: 0}
+    - {text: "&cTime:", icon: "default/clock.png", ping: 0}
+    - {text: "&6${time HH:mm:ss}", icon: "default/clock.png", ping: 0}
+    1:
+    - {text: "&a&lSurvival", icon: "colors/green.png", ping: 0}
+    - !players
+      playerSet: survival
+      playerComponent: {text: "${player vault_prefix}${player name}", icon: "${player skin}", ping: "${player ping}"}
+      morePlayersComponent: {text: "... and ${other_count} others", icon: "default/players.png", ping: 0}
+      minSize: 9
+      maxSize: 9
+    - {text: "&b&lCreative", icon: "colors/aqua.png", ping: 0}
+    - !players
+      playerSet: creative
+      playerComponent: {text: "${player vault_prefix}&f${player name}", icon: "${player skin}", ping: "${player ping}"}
+      morePlayersComponent: {text: "... and ${other_count} others", icon: "default/players.png", ping: 0}
+      minSize: 9
+      maxSize: 9
