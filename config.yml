@@ -1,16 +1,60 @@
-player_limit: -1
+groups:
+  Darunia18:
+  - admin
+  - mod
+  - helper
 ip_forward: true
+network_compression_threshold: 256
+stats: 0cc7ebee-cb22-49f3-bed5-72b4bc4ae4f6
 permissions:
   default:
   - bungeecord.command.server
   - bungeecord.command.list
+  - gssentials.announce.join
+  - gssentials.announce.quit
+  - gssentials.chat
+  - gssentials.find
+  - gssentials.friend
+  - gssentials.ignore
+  - gssentials.join
+  - gssentials.list
+  - gssentials.message
+  - gssentials.message.global
+  cplus:
+  vip:
+  vipplus:
+  - gssentials.message.color
+  mvp:
+  vet:
+  helper:
+  - bat.comment
+  - bat.kick
+  - bat.mute
+  - gssentials.admin.alert
+  - gssentials.admin.notify
+  mod:
+  - bat.ban
+  - gssentials.admin.chat
+  - gssentials.admin.hide
+  - gssentials.admin.hide.bypass
+  - gssentials.admin.lookup
+  - gssentials.admin.lookup.info
+  - gssentials.admin.spy
+  - gssentials.message.click
+  - gssentials.message.hover
+  - gssentials.slap
   admin:
+  - bat.admin
+  - gssentials.admin.reload
+  - gssentials.admin.send
+  - gssentials.admin.sendall
+  - gssentials.admin.spy.command
   - bungeecord.command.alert
   - bungeecord.command.end
   - bungeecord.command.ip
   - bungeecord.command.reload
-timeout: 30000
-log_commands: false
+  - gssentials.list.offline
+  - gssentials.list.restricted
 online_mode: true
 servers:
   survival:
@@ -21,6 +65,7 @@ servers:
     motd: '&1NightfallMC Creative'
     address: localhost:25565
     restricted: false
+timeout: 30000
 listeners:
 - query_port: 25577
   motd: '&1NightfallMC'
@@ -37,11 +82,8 @@ listeners:
   tab_size: 60
   ping_passthrough: false
   force_default_server: false
+player_limit: -1
 disabled_commands:
 - disabledcommandhere
-network_compression_threshold: 256
-groups:
-  Darunia18:
-  - admin
+log_commands: false
 connection_throttle: 4000
-stats: 0cc7ebee-cb22-49f3-bed5-72b4bc4ae4f6
