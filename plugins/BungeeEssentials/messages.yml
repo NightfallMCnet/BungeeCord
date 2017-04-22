@@ -8,9 +8,9 @@ format:
   send: '&aSending &e{{ PLAYER }} &ato server &e{{ SERVER }}'
 message:
   format:
-    send: '&7[me » {{ BREAK }}&7{{ RECIPIENT }}{{ HOVER: On the {{ SERVER }} server.
+    send: '&6[me » {{ BREAK }}&7{{ RECIPIENT }}{{ HOVER: On the {{ SERVER }} server.
       }}{{ BREAK }}&7] &f{{ MESSAGE }}'
-    receive: '&7[{{ SENDER }} » me]{{ HOVER: On the {{ SERVER }} server. Click to
+    receive: '&6[{{ SENDER }} » me]{{ HOVER: On the {{ SERVER }} server. Click to
       respond. }}{{ CLICK: SUG: /msg {{ SENDER }}  }} &f{{ MESSAGE }}'
   enabled: '&aMessaging is now enabled!'
   disabled: '&cMessaging is now disabled!'
@@ -54,7 +54,7 @@ rulenotify:
   replace: '&7{{ PLAYER }} swore but was replaced!'
   command: '&7{{ PLAYER }} swore, triggering a command!'
 staffchat:
-  message: '&c{{ SERVER }} - {{ SENDER }} » &7{{ MESSAGE }}'
+  message: '&b{{ SERVER }} - {{ SENDER }} » &7{{ MESSAGE }}'
   enabled: '&aYou are now chatting in staff chat!'
   disabled: '&cYou are no longer chatting in staff chat!'
 chat:

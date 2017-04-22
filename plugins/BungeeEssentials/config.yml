@@ -12,7 +12,6 @@ enable:
 - sendall
 - spy
 - staffchat
-- chat
 - find
 - ignore
 - join

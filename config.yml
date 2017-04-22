@@ -1,8 +1,9 @@
 ip_forward: true
 network_compression_threshold: 256
 stats: 0cc7ebee-cb22-49f3-bed5-72b4bc4ae4f6
-permissions:
 groups:
+  md_5:
+  - admin
 servers:
   survival:
     motd: '&1NightfallMC Survival'
@@ -13,6 +14,7 @@ servers:
     address: localhost:25565
     restricted: false
 timeout: 30000
+player_limit: -1
 listeners:
 - query_port: 25577
   motd: '&1NightfallMC'
@@ -29,7 +31,15 @@ listeners:
   tab_size: 60
   ping_passthrough: false
   force_default_server: false
-player_limit: -1
+permissions:
+  default:
+  - bungeecord.command.server
+  - bungeecord.command.list
+  admin:
+  - bungeecord.command.alert
+  - bungeecord.command.end
+  - bungeecord.command.ip
+  - bungeecord.command.reload
 online_mode: true
 log_commands: false
 disabled_commands:

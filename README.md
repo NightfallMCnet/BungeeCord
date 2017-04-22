@@ -14,14 +14,18 @@ The source files for the NightfallMC BugeeCord server
 * BungeeAdminTools
   * [Link](https://www.spigotmc.org/resources/bungee-admin-tools-basics-edition.444/)
   * _Handles bans, mutes, and kicks across servers_
+  
+* BungeeChat
+  * [Link](https://www.spigotmc.org/resources/bungee-chat.12592/)
+  * _Handles chat_
 
 * BungeeEssentials
   * [Link](https://www.spigotmc.org/resources/bungeeessentials.1488/)
-  * _Handles essential features like alerts, announcements, chat, friends, and messaging_
+  * _Handles essential features like alerts, announcements, friends, and messaging_
 
 * BungeePerms
   * [Link](https://www.spigotmc.org/resources/bungeeperms.25/)
-  * _Handled BungeeCord plugin permissions_
+  * _Handles BungeeCord plugin permissions and group management_
 
 * BungeeOnlineTime
   * [Link](https://www.spigotmc.org/resources/bungeeonlinetime.795/)

@@ -7,11 +7,12 @@ groups:
     suffix: ''
     inheritances: []
     permissions:
+    - bungeechat.global
+    - bungeechat.helpop
     - bungeecord.command.server
     - bungeecord.command.list
     - gssentials.announce.join
     - gssentials.announce.quit
-    - gssentials.chat
     - gssentials.find
     - gssentials.friend
     - gssentials.ignore
@@ -87,6 +88,8 @@ groups:
     - bat.comment
     - bat.kick
     - bat.mute
+    - bungeechat.chatlock
+    - bungeechat.muteall
     - gssentials.admin.alert
     - gssentials.admin.notify
     weight: 1
@@ -122,6 +125,7 @@ groups:
     - Mod
     permissions:
     - bat.admin
+    - bungeechat.reload
     - bungeecord.command.alert
     - bungeecord.command.end
     - bungeecord.command.ip
