@@ -4,4 +4,5 @@ plugins/*.jar
 plugins/BungeeEssentials/chat/
 plugins/BungeeEssentials/lib
 plugins/BungeeEssentials/*.db
+plugins/BuyCraftX/cache
 plugins/PluginMetrics/

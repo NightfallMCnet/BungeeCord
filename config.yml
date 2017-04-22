@@ -1,11 +1,38 @@
+ip_forward: true
+network_compression_threshold: 256
+stats: 0cc7ebee-cb22-49f3-bed5-72b4bc4ae4f6
 groups:
   Darunia18:
   - admin
   - mod
   - helper
-ip_forward: true
-network_compression_threshold: 256
-stats: 0cc7ebee-cb22-49f3-bed5-72b4bc4ae4f6
+servers:
+  survival:
+    motd: '&1NightfallMC Survival'
+    address: localhost:25565
+    restricted: false
+  creative:
+    motd: '&1NightfallMC Creative'
+    address: localhost:25565
+    restricted: false
+timeout: 30000
+player_limit: -1
+listeners:
+- query_port: 25577
+  motd: '&1NightfallMC'
+  priorities:
+  - survival
+  bind_local_address: true
+  tab_list: GLOBAL_PING
+  query_enabled: false
+  host: 0.0.0.0:25577
+  forced_hosts:
+    s.nightfallmc.net: survival
+    c.nightfallmc.net: creative
+  max_players: 1
+  tab_size: 60
+  ping_passthrough: false
+  force_default_server: false
 permissions:
   default:
   - bungeecord.command.server
@@ -20,12 +47,12 @@ permissions:
   - gssentials.list
   - gssentials.message
   - gssentials.message.global
-  cplus:
-  vip:
+  cplus: null
+  vip: null
   vipplus:
   - gssentials.message.color
-  mvp:
-  vet:
+  mvp: null
+  vet: null
   helper:
   - bat.comment
   - bat.kick
@@ -58,34 +85,7 @@ permissions:
   - gssentials.list.offline
   - gssentials.list.restricted
 online_mode: true
-servers:
-  survival:
-    motd: '&1NightfallMC Survival'
-    address: localhost:25565
-    restricted: false
-  creative:
-    motd: '&1NightfallMC Creative'
-    address: localhost:25565
-    restricted: false
-timeout: 30000
-listeners:
-- query_port: 25577
-  motd: '&1NightfallMC'
-  priorities:
-  - survival
-  bind_local_address: true
-  tab_list: GLOBAL_PING
-  query_enabled: false
-  host: 0.0.0.0:25577
-  forced_hosts:
-    s.nightfallmc.net: survival
-    c.nightfallmc.net: creative
-  max_players: 1
-  tab_size: 60
-  ping_passthrough: false
-  force_default_server: false
-player_limit: -1
+log_commands: false
 disabled_commands:
 - disabledcommandhere
-log_commands: false
 connection_throttle: 4000
