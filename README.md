@@ -19,6 +19,10 @@ The source files for the NightfallMC BugeeCord server
   * [Link](https://www.spigotmc.org/resources/bungeeessentials.1488/)
   * _Handles essential features like alerts, announcements, chat, friends, and messaging_
 
+* BungeePerms
+  * [Link](https://www.spigotmc.org/resources/bungeeperms.25/)
+  * _Handled BungeeCord plugin permissions_
+
 * BungeeOnlineTime
   * [Link](https://www.spigotmc.org/resources/bungeeonlinetime.795/)
   * _Tracks the online times of players to be used for leaderboards_

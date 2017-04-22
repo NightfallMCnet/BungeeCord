@@ -4,5 +4,7 @@ plugins/*.jar
 plugins/BungeeEssentials/chat/
 plugins/BungeeEssentials/lib
 plugins/BungeeEssentials/*.db
+plugins/BungeePerms/debug.log
+plugins/BungeePerms/uuidplayerdb.yml
 plugins/BuyCraftX/cache
 plugins/PluginMetrics/

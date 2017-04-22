@@ -1,0 +1,146 @@
+groups:
+  Citizen:
+    rank: 6
+    default: true
+    display: '[&aCitizen&r]'
+    prefix: '[&aCitizen&r]'
+    suffix: ''
+    inheritances: []
+    permissions:
+    - bungeecord.command.server
+    - bungeecord.command.list
+    - gssentials.announce.join
+    - gssentials.announce.quit
+    - gssentials.chat
+    - gssentials.find
+    - gssentials.friend
+    - gssentials.ignore
+    - gssentials.join
+    - gssentials.list
+    - gssentials.message
+    - gssentials.message.global
+    weight: 3
+    ladder: default
+  Citizen+:
+    rank: 5
+    default: false
+    display: '[&2Citizen+&r]'
+    prefix: '[&2Citizen+]'
+    suffix: ''
+    inheritances:
+    - Citizen
+    permissions: []
+    weight: 3
+    ladder: default
+  VIP:
+    rank: 4
+    default: false
+    display: '[&bVIP&r]'
+    prefix: '[&bVIP&r]'
+    suffix: ''
+    inheritances:
+    - Citizen+
+    permissions: []
+    weight: 3
+    ladder: default
+  VIP+:
+    rank: 3
+    default: false
+    display: '[&3VIP+&r]'
+    prefix: '[&3VIP+&r]'
+    suffix: ''
+    inheritances:
+    - VIP
+    permissions:
+    - gssentials.message.color
+    weight: 3
+    ladder: default
+  MVP:
+    rank: 2
+    default: false
+    display: '[&9MVP&r]'
+    prefix: '[&9MVP&r]'
+    suffix: ''
+    inheritances:
+    - VIP+
+    permissions: []
+    weight: 3
+    ladder: default
+  Veteran:
+    rank: 1
+    default: false
+    display: '[&6Veteran&r]'
+    prefix: '[&6Veteran&r]'
+    suffix: ''
+    inheritances: []
+    permissions: []
+    weight: 2
+    ladder: veteran
+  Helper:
+    rank: 3
+    default: false
+    display: '[&dHelper&r]'
+    prefix: '[&dHelper&r]'
+    suffix: ''
+    inheritances: []
+    permissions:
+    - bat.comment
+    - bat.kick
+    - bat.mute
+    - gssentials.admin.alert
+    - gssentials.admin.notify
+    weight: 1
+    ladder: staff
+  Mod:
+    rank: 2
+    default: false
+    display: '[&5Mod&r]'
+    prefix: '[&5Mod&r]'
+    suffix: ''
+    inheritances:
+    - Helper
+    permissions:
+    - bat.ban
+    - gssentials.admin.chat
+    - gssentials.admin.hide
+    - gssentials.admin.hide.bypass
+    - gssentials.admin.lookup
+    - gssentials.admin.lookup.info
+    - gssentials.admin.spy
+    - gssentials.message.click
+    - gssentials.message.hover
+    - gssentials.slap
+    weight: 1
+    ladder: staff
+  Admin:
+    rank: 1
+    default: false
+    display: '[&cAdmin&r]'
+    prefix: '[&cAdmin&r]'
+    suffix: ''
+    inheritances:
+    - Mod
+    permissions:
+    - bat.admin
+    - bungeecord.command.alert
+    - bungeecord.command.end
+    - bungeecord.command.ip
+    - bungeecord.command.reload
+    - bungeeperms.debug
+    - bungeeperms.group.*
+    - bungeeperms.help
+    - bungeeperms.reload
+    - bungeeperms.user.*
+    - bungeeperms.uuid
+    - bungeetablistplus.admin
+    - bungeetablistplus.command
+    - buycraft.admin
+    - gssentials.admin.reload
+    - gssentials.admin.send
+    - gssentials.admin.sendall
+    - gssentials.admin.spy.command
+    - gssentials list.offline
+    - gssentials.list.restricted
+    weight: 1
+    ladder: staff
+version: 1
