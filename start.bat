@@ -1,4 +1,4 @@
 @echo off
 
-java -Xms512M -Xmx512M -jar BungeeCord.jar
+java -Xms256M -Xmx256M -jar BungeeCord.jar
 pause

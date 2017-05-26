@@ -27,6 +27,6 @@ async-commands: true
 networktype: Global
 networkservers: []
 debug:
-  path: C:\Users\docto_000\Documents\Minecraft Servers\New Nightfall\BungeeCord\plugins\BungeePerms/debug.log
+  path: C:\New Nightfall\BungeeCord\plugins\BungeePerms/debug.log
   showexceptions: true
   showlogs: false
