@@ -47,7 +47,7 @@ header:
 headerAnimationUpdateInterval: 0.2
 
 footer:
-- &bplay.nightfallmc.net
+- '&bplay.nightfallmc.net'
 
 footerAnimationUpdateInterval: 0.5
 
