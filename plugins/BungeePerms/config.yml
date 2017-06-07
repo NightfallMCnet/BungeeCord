@@ -1,8 +1,8 @@
 useUUIDs: true
 useregexperms: false
 grouppermission: true
-backendtype: YAML
-uuidplayerdb: YAML
+backendtype: MySQL2
+uuidplayerdb: MySQL
 tablePrefix: bungeeperms_
 uuidfetcher:
   cooldown: 3000

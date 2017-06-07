@@ -14,7 +14,7 @@ The source files for the NightfallMC BugeeCord server
 * BungeeAdminTools
   * [Link](https://www.spigotmc.org/resources/bungee-admin-tools-basics-edition.444/)
   * _Handles bans, mutes, and kicks across servers_
-  
+
 * BungeeChat
   * [Link](https://www.spigotmc.org/resources/bungee-chat.12592/)
   * _Handles chat_
@@ -42,6 +42,10 @@ The source files for the NightfallMC BugeeCord server
 * BuyCraft
   * [Link](https://www.spigotmc.org/resources/buycraft.336/)
   * _Handles features relating to purchasing ranks and donating to the server_
+
+* NuVotifier
+  * [Link](https://www.spigotmc.org/resources/nuvotifier.13449/)
+  * Handles players voting on voting sites
 
 * Yamler-Bungee
   * [Link](https://www.spigotmc.org/resources/yamler.315/)

@@ -20,6 +20,84 @@ groups:
     - gssentials.list
     - gssentials.message
     - gssentials.message.global
+    - ama.user
+    - areashop.find
+    - areashop.help
+    - areashop.info
+    - areashop.limits.default
+    - areashop.me
+    - areashop.rent
+    - areashop.setteleport
+    - areashop.teleport
+    - areashop.teleportsign
+    - areashop.unrentown
+    - -areashop.addfriend
+    - -areashop.buy
+    - -areashop.buynormal
+    - -areashop.delfriend
+    - -areashop.resell
+    - -areashop.sellown
+    - -areashop.stopresell
+    - dynmap.webchat
+    - dynmap.webregiseter
+    - essentials.afk
+    - essentials.auto
+    - essentials.balance
+    - essentials.compass
+    - essentials.delhome
+    - essentials.eco
+    - essentials.getpos
+    - essentials.help
+    - essentials.home
+    - essentials.home.bed
+    - essentials.list
+    - essentials.pay
+    - essentials.ping
+    - essentials.rules
+    - essentials.sethome
+    - essentials.sethome.bed
+    - essentials.sethome.multiple
+    - essentials.sethome.multiple.three
+    - essentials.spawn
+    - essentials.time
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.tpdeny
+    - essentials.tptoggle
+    - essentials.warp
+    - essentials.warp.list
+    - essentials.warps.*
+    - lwc.protect
+    - -mcmmo.chat.partychat
+    - -mcmmo.commands.party.*
+    - -mcmmo.commands.ptp.*
+    - mcmmoaction.display
+    - mcmmoaction.command.toggle
+    - pet.help
+    - shopchest.buy
+    - shopchest.create
+    - shopchest.sell
+    - silkspawners.changetype.bat
+    - silkspawners.changetype.chicken
+    - silkspawners.changetype.cow
+    - silkspawners.changetype.creeper
+    - silkspawners.changetype.endermite
+    - silkspawners.changetype.mooshroom
+    - silkspawners.changetype.pig
+    - silkspawners.changetype.rabbit
+    - silkspawners.changetype.sheep
+    - silkspawners.changetype.skeleton
+    - silkspawners.changetype.slime
+    - silkspawners.changetype.spider
+    - silkspawners.changetype.squid
+    - silkspawners.changetype.zombie
+    - silkspawners.changetype.zombiepigman
+    - -silkspawners.explodedrop
+    - silkspawners.info
+    - silkspawners.place.*
+    - silkspawners.silkdrop.*
+    - silkspawners.viewtype
     weight: 3
     ladder: default
   Citizen+:
@@ -30,7 +108,9 @@ groups:
     suffix: ''
     inheritances:
     - Citizen
-    permissions: []
+    permissions:
+    - chairs.sit
+    - essentials.hat
     weight: 3
     ladder: default
   VIP:
@@ -41,7 +121,32 @@ groups:
     suffix: ''
     inheritances:
     - Citizen+
-    permissions: []
+    permissions:
+    - libsdisguises.disguise.bat.-setinvisible
+    - libsdisguises.disguise.chicken.-setinvisible
+    - libsdisguises.disguise.cow.-setinvisible
+    - libsdisguises.disguise.irongolem.-setinvisible
+    - libsdisguises.disguise.mushroomcow.-setinvisible
+    - libsdisguises.disguise.ocelot.-setinvisible
+    - libsdisguises.disguise.pig.-setinvisible
+    - libsdisguises.disguise.rabbit.-setinvisible
+    - libsdisguises.disguise.sheep.-setinvisible
+    - libsdisguises.disguise.snowman.-setinvisible
+    - libsdisguises.disguise.squid.-setinvisible
+    - libsdisguises.disguise.villager.-setinvisible
+    - libsdisguises.disguise.wolf.-setinvisible
+    - libsdisguises.seecmd.viewself
+    - libsdisguises.undisguise
+    - pet.name
+    - pet.passive
+    - pet.pettohat
+    - pet.pettomount
+    - pet.summon
+    - trailgui.commands.clearall
+    - trailgui.commands.inventory
+    - trailgui.commands.trails
+    - trailgui.inventory.*
+    - trailgui.trails.*
     weight: 3
     ladder: default
   VIP+:
@@ -54,6 +159,25 @@ groups:
     - VIP
     permissions:
     - gssentials.message.color
+    - libsdisguises.disguise.blaze.-setinvisible
+    - libsdisguises.disguise.cavespider.-setinvisible
+    - libsdisguises.disguise.creeper.-setinvisible
+    - libsdisguises.disguise.enderman.-setinvisible
+    - libsdisguises.disguise.ghast.-setinvisible
+    - libsdisguises.disguise.guardian.-setinvisible
+    - libsdisguises.disguise.horse.-setinvisible
+    - libsdisguises.disguise.llama.-setinvisible
+    - libsdisguises.disguise.magmacube.-setinvisible
+    - libsdisguises.disguise.polarbear.-setinvisible
+    - libsdisguises.disguise.shulker.-setinvisible
+    - libsdisguises.disguise.skeleton.-setinvisible
+    - libsdisguises.disguise.slime.-setinvisible
+    - libsdisguises.disguise.spider.-setinvisible
+    - libsdisguises.disguise.witch.-setinvisible
+    - libsdisguises.disguise.wither_skeleton.-setinvisible
+    - libsdisguises.disguise.zombie.-setinvisible
+    - libsdisguises.disguise.zombiepigman.-setinvisible
+    - pet.hostile
     weight: 3
     ladder: default
   MVP:
@@ -64,7 +188,12 @@ groups:
     suffix: ''
     inheritances:
     - VIP+
-    permissions: []
+    permissions:
+    - libsdisguises.disguise.evoker.-setinvisible
+    - libsdisguises.disguise.vex.-setinvisible
+    - libsdisguises.disguise.vindicator.-setinvisible
+    - pet.name.color
+    - pet.name.magic
     weight: 3
     ladder: default
   Veteran:
@@ -74,7 +203,8 @@ groups:
     prefix: '[&6Veteran&r]'
     suffix: ''
     inheritances: []
-    permissions: []
+    permissions:
+    - essentials.sethome.multiple.vet
     weight: 2
     ladder: veteran
   Helper:
@@ -92,6 +222,11 @@ groups:
     - bungeechat.muteall
     - gssentials.admin.alert
     - gssentials.admin.notify
+    - essentials.back
+    - logblock.lookup
+    - logblock.spawntools
+    - logblock.tools.tool
+    - logblock.tools.toolblock
     weight: 1
     ladder: staff
   Mod:
@@ -102,6 +237,7 @@ groups:
     suffix: ''
     inheritances:
     - Helper
+    - MVP
     permissions:
     - bat.ban
     - gssentials.admin.chat
@@ -113,8 +249,39 @@ groups:
     - gssentials.message.click
     - gssentials.message.hover
     - gssentials.slap
+    - essentials.home.others
+    - essentials.ptime
+    - essentials.seen
+    - essentials.seen.banreason
+    - essentials.time.world.all
+    - essentials.time.set
+    - essentials.tp.others
+    - essentials.tphere
+    - essentials.vanish
+    - logblock.me
+    - logblock.tp
+    - lwc.mod
+    - openinv.anychest
+    - openinv.crossworld
+    - openinv.openender
+    - openinv.openinv
+    - openinv.openself
+    - openinv.override
+    - openinv.search
+    - openinv.silent
+    - pet.types.*
     weight: 1
     ladder: staff
+  Retired:
+    rank: 1
+    default: false
+    display: '[&6Retired&r]'
+    prefix: '[&6Retired&r]'
+    suffix: ''
+    inheritances: []
+    permissions: []
+    weight: 1
+    ladder: retired
   Admin:
     rank: 1
     default: false
@@ -131,10 +298,15 @@ groups:
     - bungeecord.command.ip
     - bungeecord.command.reload
     - bungeeperms.debug
+    - bungeeperms.demote
     - bungeeperms.group.*
+    - bungeeperms.groups
     - bungeeperms.help
+    - bungeeperms.migrate
+    - bungeeperms.promote
     - bungeeperms.reload
     - bungeeperms.user.*
+    - bungeeperms.users
     - bungeeperms.uuid
     - bungeetablistplus.admin
     - bungeetablistplus.command
@@ -145,6 +317,130 @@ groups:
     - gssentials.admin.spy.command
     - gssentials list.offline
     - gssentials.list.restricted
+    - ama.admin
+    - areashop.createbuy
+    - areashop.createrent
+    - areashop.delsign
+    - areashop.destroybuy
+    - areashop.destroyrent
+    - areashop.linksigns
+    - areashop.reload
+    - areashop.schematicevents
+    - areashop.setduration
+    - areashop.setprice
+    - areashop.setrestore
+    - areashop.unrent
+    - chairs.reload
+    - dynmap.*
+    - essentials.afk.others
+    - essentials.back.ondeath
+    - essentials.balance.others
+    - essentials.bigtree
+    - essentials.book
+    - essentials.book.*
+    - essentials.clearinventory
+    - essentials.clearinventory.*
+    - essentials.delhome.others
+    - essentials.delwarp
+    - essentials.enchant
+    - essentials.enderchest
+    - essentials.enderchest.*
+    - essentials.enchantments.*
+    - essentials.essentials
+    - essentials.exp
+    - essentials.exp.*
+    - essentials.ext
+    - essentials.feed
+    - essentials.feed.*
+    - essentials.fireball
+    - essentials.firework
+    - essentials.firework.fire
+    - essentials.fly
+    - essentials.fly.others
+    - essentials.gamemode.*
+    - essentials.gc
+    - essentials.getpos.others
+    - essentials.give
+    - essentials.heal
+    - essentials.heal.*
+    - essentials.joinfullserver
+    - essentials.kill
+    - essentials.kit
+    - essentials.kit.*
+    - essentials.lightning
+    - essentials.lightning.others
+    - essentials.list.hidden
+    - essentials.more
+    - essentials.realname
+    - essentials.repair
+    - essentials.repair.*
+    - essentials.seen
+    - essentials.seen.*
+    - essentials.sethome.others
+    - essentials.setspawn
+    - essentials.setwarp
+    - essentials.skull
+    - essentials.skull.*
+    - essentials.sleepingignored
+    - essentials.spawn.others
+    - essentials.spawnmob
+    - essentials.spawnmob.*
+    - essentials.speed
+    - essentials.speed.*
+    - essentials.sudo
+    - essentials.thunder
+    - essentials.top
+    - essentials.tp
+    - essentials.tpaall
+    - essentials.tpall
+    - essentials.tpo
+    - essentials.tpohere
+    - essentials.tppos
+    - essentials.tptoggle.others
+    - essentials.tree
+    - essentials.unlimited
+    - essentials.vanish.see
+    - essentials.warp.otherplayers
+    - essentials.weather
+    - essentials.whois
+    - essentials.workbench
+    - holograms.*
+    - holomedals.admin
+    - holomedals.give.*
+    - holomedals.take.*
+    - libsdisguises.disguiseentity
+    - libsdisguises.disguiseentity.*
+    - libsdisguises.disguiseplayer.*
+    - libsdisguises.undisguiseplayer
+    - logblock.clearlog
+    - logblock.rollback
+    - lwc.admin
+    - mcmmo.commands.*
+    - openinv.editinv
+    - pet.inv.other
+    - pet.remove.other
+    - remotecontroller.reload
+    - remotecontroller.summon
+    - remotecontroller.user
+    - shopchest.create.admin
+    - shopchest.openother
+    - shopchest.reload
+    - shopchest.removeother
+    - shopchest.worldguard.bypass
+    - silkspawners.freeitem.*
+    - silkspawners.freeitemegg.*
+    - silkspawners.reload
+    - trailgui.commands.clearall.other
+    - trailgui.commands.reloadconfigs
+    - trailgui.commands.version
+    - vault.admin
+    - worldedit.*
+    - worldguard.fire-toggle.*
+    - worldguard.halt-activity
+    - worldguard.locate
+    - worldguard.region.*
+    - worldguard.reload
+    - worldguard.stack
     weight: 1
     ladder: staff
 version: 1
