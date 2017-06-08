@@ -45,7 +45,7 @@ The source files for the NightfallMC BugeeCord server
 
 * NuVotifier
   * [Link](https://www.spigotmc.org/resources/nuvotifier.13449/)
-  * Handles players voting on voting sites
+  * _Handles players voting on voting sites_
 
 * Yamler-Bungee
   * [Link](https://www.spigotmc.org/resources/yamler.315/)
