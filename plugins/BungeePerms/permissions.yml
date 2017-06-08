@@ -129,6 +129,7 @@ groups:
     - libsdisguises.disguise.irongolem.-setinvisible
     - libsdisguises.disguise.mushroomcow.-setinvisible
     - libsdisguises.disguise.ocelot.-setinvisible
+    - libsdisguises.disguise.parrot.-setinvisible
     - libsdisguises.disguise.pig.-setinvisible
     - libsdisguises.disguise.rabbit.-setinvisible
     - libsdisguises.disguise.sheep.-setinvisible
@@ -191,6 +192,7 @@ groups:
     - VIP+
     permissions:
     - libsdisguises.disguise.evoker.-setinvisible
+    - libsdisguises.disguise.illusioner.-setinvisible
     - libsdisguises.disguise.vex.-setinvisible
     - libsdisguises.disguise.vindicator.-setinvisible
     - pet.name.color
