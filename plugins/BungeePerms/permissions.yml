@@ -76,7 +76,8 @@ groups:
     - mcmmoaction.command.toggle
     - pet.help
     - shopchest.buy
-    - shopchest.create
+    - shopchest.create.buy
+    - shopchest.create.sell
     - shopchest.sell
     - silkspawners.changetype.bat
     - silkspawners.changetype.chicken
@@ -425,8 +426,8 @@ groups:
     - shopchest.create.admin
     - shopchest.openother
     - shopchest.reload
-    - shopchest.removeother
-    - shopchest.worldguard.bypass
+    - shopchest.remove.*
+    - shopchest.external.bypass
     - silkspawners.freeitem.*
     - silkspawners.freeitemegg.*
     - silkspawners.reload
