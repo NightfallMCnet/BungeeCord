@@ -436,6 +436,7 @@ groups:
     - logblock.rollback
     - lwc.admin
     - mcmmo.commands.*
+    - oldcombatmechanics.commands
     - openinv.editinv
     - pet.inv.other
     - pet.remove.other
