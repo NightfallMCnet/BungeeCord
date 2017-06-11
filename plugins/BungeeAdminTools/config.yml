@@ -17,7 +17,7 @@ debugMode: false
 mysql:
   # Set to true to use MySQL. Otherwise SQL Lite will be used
   enabled: true
-  user: user
+  user: username
   password: password
   database: database
   host: localhost

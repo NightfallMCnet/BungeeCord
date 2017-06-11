@@ -16,11 +16,11 @@ groups:
 servers:
   survival:
     motd: '&1NightfallMC Survival'
-    address: localhost:25565
+    address: s.nightfallmc.net:25565
     restricted: false
   creative:
     motd: '&1NightfallMC Creative'
-    address: localhost:25565
+    address: c.nightfallmc.net:25565
     restricted: false
 timeout: 30000
 listeners:
@@ -31,7 +31,7 @@ listeners:
   bind_local_address: true
   tab_list: GLOBAL_PING
   query_enabled: false
-  host: 0.0.0.0:25577
+  host: play.nightfallmc.net:25565
   forced_hosts:
     s.nightfallmc.net: survival
     c.nightfallmc.net: creative

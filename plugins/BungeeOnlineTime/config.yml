@@ -2,9 +2,9 @@ lastReset: 15/04/2017
 MySQL:
   host: localhost
   port: 3306
-  database: minecraft
-  username: player
-  password: abc123
+  database: database
+  username: username
+  password: password
 Settings:
   disabledServers:
   - lobby
