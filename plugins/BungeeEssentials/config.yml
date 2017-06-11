@@ -27,7 +27,6 @@ enable:
 - rules-chat
 - spam
 - spam-chat
-- spam-command
 commands:
   alert:
   - alert

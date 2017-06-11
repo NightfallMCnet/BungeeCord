@@ -22,7 +22,7 @@ Settings:
       enabled: true
       aliases:
         - g
-      default: false
+      default: true
       Symbol:
         enabled: false
         symbol: "!"
@@ -81,7 +81,8 @@ Settings:
         - bhide
     ChatLock:
       enabled: true
-      aliases: []
+      aliases:
+        - chatlock
     LocalChat:
       enabled: true
     ServerSwitchMessages:
@@ -151,16 +152,16 @@ Messages:
   unignore-yourself: "&cYou can not unignore yourself!"
   not-ignored: "&cYou have not ignored this user!"
   anti-duplication: "&cPlease do not spam messages!"
-  
+
 Formats:
   alert: "&9ALERT > &c&l%sender: &r%message%"
   socialspy: "&9SPY > &e%sender_name% &8-> &e%target_name% &8: &r%message%"
-  global: "&9GLOBAL > &e%sender_name%: &r%message%"
+  global: "%sender_prefix% &r%sender_name%: %message%"
   message-sender: "&6You &8-> &6%target_name% &8: &r%message%"
   message-target: "&6%sender_name% &8-> &6You&8: &r%message%"
   staffchat: "&9STAFF > &e%sender_name%: &r%message%"
   muted: "&cSorry but you can not talk because you are muted!"
-  local-chat: "%sender_prefix% &7%sender_name%: %message%"
+  local-chat: "%sender_prefix% &r%sender_name%: %message%"
   joinmessage: "&e%sender_name% has joined the network!"
   leavemessage: "&e%sender_name% has left the network!"
   helpop: "&2HELPOP > &e%sender_name%: &r%message%"

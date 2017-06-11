@@ -8,6 +8,7 @@ groups:
     inheritances: []
     permissions:
     - bungeechat.global
+    - bungeechat.global.toggle
     - bungeechat.helpop
     - bungeecord.command.server
     - bungeecord.command.list
@@ -20,6 +21,7 @@ groups:
     - gssentials.list
     - gssentials.message
     - gssentials.message.global
+    - bukkit.command.me
     - ama.user
     - areashop.find
     - areashop.help
@@ -51,6 +53,7 @@ groups:
     - essentials.home
     - essentials.home.bed
     - essentials.list
+    - essentials.me
     - essentials.pay
     - essentials.ping
     - essentials.rules
@@ -160,7 +163,7 @@ groups:
     inheritances:
     - VIP
     permissions:
-    - gssentials.message.color
+    - bungeechat.colors
     - libsdisguises.disguise.blaze.-setinvisible
     - libsdisguises.disguise.cavespider.-setinvisible
     - libsdisguises.disguise.creeper.-setinvisible
@@ -320,6 +323,20 @@ groups:
     - gssentials.admin.spy.command
     - gssentials list.offline
     - gssentials.list.restricted
+    - bukkit.command.playsound
+    - bukkit.command.plugins
+    - bukkit.command.save.*
+    - bukkit.command.scoreboard
+    - bukkit.command.seed
+    - bukkit.command.spreadplayers
+    - bukkit.command.summon
+    - bukkit.command.tellraw
+    - bukkit.command.testfor
+    - bukkit.command.testforblock
+    - bukkit.command.tps
+    - bukkit.command.version
+    - bukkit.command.whitelist.*
+    - minecraft.command.stop
     - ama.admin
     - areashop.createbuy
     - areashop.createrent

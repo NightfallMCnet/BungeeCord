@@ -1,7 +1,7 @@
 format:
   alert: '&8[&4!&8] &4{{ MESSAGE }}'
-  join: '&8[&a+&8] &7{{ PLAYER }}'
-  quit: '&8[&c-&8] &7{{ PLAYER }}'
+  join: '&e{{ PLAYER }} joined the game'
+  quit: '&e{{ PLAYER }} left the game'
   kick: '{{ PLAYER }} was kicked for {{ REASON }}'
   chat: '{{ PLAYER }}: {{ MESSAGE }}'
   find: '&e{{ PLAYER }} &ais playing on &e{{ SERVER }}'
@@ -54,7 +54,7 @@ rulenotify:
   replace: '&7{{ PLAYER }} swore but was replaced!'
   command: '&7{{ PLAYER }} swore, triggering a command!'
 staffchat:
-  message: '&b{{ SERVER }} - {{ SENDER }} » &7{{ MESSAGE }}'
+  message: '&b[{{ SENDER }}] » &7{{ MESSAGE }}'
   enabled: '&aYou are now chatting in staff chat!'
   disabled: '&cYou are no longer chatting in staff chat!'
 chat:
