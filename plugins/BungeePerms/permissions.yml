@@ -1,6 +1,6 @@
 groups:
   Citizen:
-    rank: 6
+    rank: 10
     default: true
     display: '[&aCitizen&r]'
     prefix: '[&aCitizen&r]'
@@ -72,9 +72,34 @@ groups:
     - essentials.warp.list
     - essentials.warps.*
     - lwc.protect
+    - mcmmo.ability.*
     - -mcmmo.chat.partychat
+    - mcmmo.commands.acrobatics
+    - mcmmo.commands.archery
+    - mcmmo.commands.axes
+    - mcmmo.commands.excavation
+    - mcmmo.commands.fishing
+    - mcmmo.commands.herbalism
+    - mcmmo.commands.inspect
+    - mcmmo.commands.mcability
+    - mcmmo.commands.mchud
+    - mcmmo.commands.mcmmo.description
+    - mcmmo.commands.mcmmo.help
+    - mcmmo.commands.mcrank
+    - mcmmo.commands.mcstats
+    - mcmmo.commands.mctop
+    - mcmmo.commands.mctop.*
+    - mcmmo.commands.mobhealth
     - -mcmmo.commands.party.*
     - -mcmmo.commands.ptp.*
+    - mcmmo.commands.repair
+    - mcmmo.commands.smelting
+    - mcmmo.commands.swords
+    - mcmmo.commands.taming
+    - mcmmo.commands.unarmed
+    - mcmmo.commands.woodcutting
+    - mcmmo.skills.*
+    - mcmmo.mobhealthdisplay
     - mcmmoaction.display
     - mcmmoaction.command.toggle
     - pet.help
@@ -102,23 +127,23 @@ groups:
     - silkspawners.place.*
     - silkspawners.silkdrop.*
     - silkspawners.viewtype
-    weight: 3
+    weight: 10
     ladder: default
   Citizen+:
-    rank: 5
+    rank: 9
     default: false
     display: '[&2Citizen+&r]'
-    prefix: '[&2Citizen+]'
+    prefix: '[&2Citizen+&r]'
     suffix: ''
     inheritances:
     - Citizen
     permissions:
     - chairs.sit
     - essentials.hat
-    weight: 3
+    weight: 9
     ladder: default
   VIP:
-    rank: 4
+    rank: 8
     default: false
     display: '[&bVIP&r]'
     prefix: '[&bVIP&r]'
@@ -142,6 +167,7 @@ groups:
     - libsdisguises.disguise.wolf.-setinvisible
     - libsdisguises.seecmd.viewself
     - libsdisguises.undisguise
+    - pet.help
     - pet.name
     - pet.passive
     - pet.pettohat
@@ -152,10 +178,10 @@ groups:
     - trailgui.commands.trails
     - trailgui.inventory.*
     - trailgui.trails.*
-    weight: 3
+    weight: 8
     ladder: default
   VIP+:
-    rank: 3
+    rank: 7
     default: false
     display: '[&3VIP+&r]'
     prefix: '[&3VIP+&r]'
@@ -183,10 +209,12 @@ groups:
     - libsdisguises.disguise.zombie.-setinvisible
     - libsdisguises.disguise.zombiepigman.-setinvisible
     - pet.hostile
-    weight: 3
+    - pet.name.color
+    - pet.name.magic
+    weight: 7
     ladder: default
   MVP:
-    rank: 2
+    rank: 6
     default: false
     display: '[&9MVP&r]'
     prefix: '[&9MVP&r]'
@@ -200,10 +228,10 @@ groups:
     - libsdisguises.disguise.vindicator.-setinvisible
     - pet.name.color
     - pet.name.magic
-    weight: 3
+    weight: 6
     ladder: default
   Veteran:
-    rank: 1
+    rank: 5
     default: false
     display: '[&6Veteran&r]'
     prefix: '[&6Veteran&r]'
@@ -211,10 +239,10 @@ groups:
     inheritances: []
     permissions:
     - essentials.sethome.multiple.vet
-    weight: 2
+    weight: 5
     ladder: veteran
   Helper:
-    rank: 3
+    rank: 4
     default: false
     display: '[&dHelper&r]'
     prefix: '[&dHelper&r]'
@@ -233,10 +261,10 @@ groups:
     - logblock.spawntools
     - logblock.tools.tool
     - logblock.tools.toolblock
-    weight: 1
+    weight: 4
     ladder: staff
   Mod:
-    rank: 2
+    rank: 3
     default: false
     display: '[&5Mod&r]'
     prefix: '[&5Mod&r]'
@@ -259,6 +287,7 @@ groups:
     - essentials.ptime
     - essentials.seen
     - essentials.seen.banreason
+    - essentials.sethome.multiple.unlimited
     - essentials.time.world.all
     - essentials.time.set
     - essentials.tp.others
@@ -276,17 +305,17 @@ groups:
     - openinv.search
     - openinv.silent
     - pet.types.*
-    weight: 1
+    weight: 3
     ladder: staff
   Retired:
-    rank: 1
+    rank: 2
     default: false
     display: '[&6Retired&r]'
     prefix: '[&6Retired&r]'
     suffix: ''
     inheritances: []
     permissions: []
-    weight: 1
+    weight: 2
     ladder: retired
   Admin:
     rank: 1
@@ -325,6 +354,7 @@ groups:
     - gssentials.list.restricted
     - bukkit.command.playsound
     - bukkit.command.plugins
+    - bukkit.command.save
     - bukkit.command.save.*
     - bukkit.command.scoreboard
     - bukkit.command.seed
@@ -411,6 +441,7 @@ groups:
     - essentials.thunder
     - essentials.top
     - essentials.tp
+    - essentials.tp.position
     - essentials.tpaall
     - essentials.tpall
     - essentials.tpo
@@ -431,6 +462,8 @@ groups:
     - libsdisguises.disguiseentity
     - libsdisguises.disguiseentity.*
     - libsdisguises.disguiseplayer.*
+    - libsdisguises.reload
+    - libsdisguises.seecmd.libsdisguises
     - libsdisguises.undisguiseplayer
     - logblock.clearlog
     - logblock.rollback

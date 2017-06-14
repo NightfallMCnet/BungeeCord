@@ -34,7 +34,9 @@ listeners:
   host: play.nightfallmc.net:25565
   forced_hosts:
     s.nightfallmc.net: survival
+    survival.nightfallmc.net: survival
     c.nightfallmc.net: creative
+    creative.nightfallmc.net: creative
   max_players: 1
   tab_size: 60
   ping_passthrough: false
