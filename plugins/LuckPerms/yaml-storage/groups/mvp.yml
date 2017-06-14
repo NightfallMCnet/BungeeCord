@@ -1,0 +1,11 @@
+name: mvp
+permissions:
+- group.vip+
+- libsdisguises.disguise.evoker.-setinvisible
+- libsdisguises.disguise.illusioner.-setinvisible
+- libsdisguises.disguise.vex.-setinvisible
+- libsdisguises.disguise.vindicator.-setinvisible
+- pet.name.color
+- pet.name.magic
+- prefix.9.[&9MVP&r]
+- weight.9

@@ -1,0 +1,16 @@
+name: helper
+permissions:
+- bat.comment
+- bat.kick
+- bat.mute
+- bungeechat.chatlock
+- bungeechat.muteall
+- essentials.back
+- gssentials.admin.alert
+- gssentials.admin.notify
+- logblock.lookup
+- logblock.spawntools
+- logblock.tools.tool
+- logblock.tools.toolblock
+- prefix.11.[&dHelper&r]
+- weight.11

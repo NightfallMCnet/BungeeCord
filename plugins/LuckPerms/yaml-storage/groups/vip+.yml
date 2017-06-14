@@ -1,0 +1,27 @@
+name: vip+
+permissions:
+- bungeechat.colors
+- group.vip
+- libsdisguises.disguise.blaze.-setinvisible
+- libsdisguises.disguise.cavespider.-setinvisible
+- libsdisguises.disguise.creeper.-setinvisible
+- libsdisguises.disguise.enderman.-setinvisible
+- libsdisguises.disguise.ghast.-setinvisible
+- libsdisguises.disguise.guardian.-setinvisible
+- libsdisguises.disguise.horse.-setinvisible
+- libsdisguises.disguise.llama.-setinvisible
+- libsdisguises.disguise.magmacube.-setinvisible
+- libsdisguises.disguise.polarbear.-setinvisible
+- libsdisguises.disguise.shulker.-setinvisible
+- libsdisguises.disguise.skeleton.-setinvisible
+- libsdisguises.disguise.slime.-setinvisible
+- libsdisguises.disguise.spider.-setinvisible
+- libsdisguises.disguise.witch.-setinvisible
+- libsdisguises.disguise.wither_skeleton.-setinvisible
+- libsdisguises.disguise.zombie.-setinvisible
+- libsdisguises.disguise.zombiepigman.-setinvisible
+- pet.hostile
+- pet.name.color
+- pet.name.magic
+- prefix.8.[&3VIP+&r]
+- weight.8

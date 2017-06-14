@@ -8,5 +8,8 @@ plugins/BungeeHostLimiter/
 plugins/BungeePerms/debug.log
 plugins/BungeePerms/uuidplayerdb.yml
 plugins/BuyCraftX/cache
+plugins/LuckPerms/lib/
+plugins/LuckPerms/yaml-storage/actions.*
+plugins/LuckPerms/yaml-storage/uuidcache.txt
 plugins/NuVotifier/
 plugins/PluginMetrics/

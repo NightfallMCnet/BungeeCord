@@ -1,0 +1,5 @@
+name: veteran
+permissions:
+- essentials.sethome.multiple.vet
+- prefix.10.[&6Veteran&r]
+- weight.10

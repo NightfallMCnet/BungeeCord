@@ -1,0 +1,135 @@
+name: citizen
+permissions:
+- silkspawners.silkdrop.*
+- silkspawners.place.*
+- mcmmo.skills.*
+- mcmmo.commands.ptp.*:
+    value: false
+- mcmmo.commands.party.*:
+    value: false
+- mcmmo.commands.mctop.*
+- mcmmo.ability.*
+- essentials.warps.*
+- ama.user
+- areashop.addfriend:
+    value: false
+- areashop.buy:
+    value: false
+- areashop.buynormal:
+    value: false
+- areashop.delfriend:
+    value: false
+- areashop.find
+- areashop.help
+- areashop.info
+- areashop.limits.default
+- areashop.me
+- areashop.rent
+- areashop.resell:
+    value: false
+- areashop.sellown:
+    value: false
+- areashop.setteleport
+- areashop.stopresell:
+    value: false
+- areashop.teleport
+- areashop.teleportsign
+- areashop.unrentown
+- bukkit.command.me
+- bungeechat.global
+- bungeechat.global.toggle
+- bungeechat.helpop
+- bungeecord.command.list
+- bungeecord.command.server
+- dynmap.webchat
+- dynmap.webregiseter
+- essentials.afk
+- essentials.auto
+- essentials.balance
+- essentials.compass
+- essentials.delhome
+- essentials.eco
+- essentials.getpos
+- essentials.help
+- essentials.home
+- essentials.home.bed
+- essentials.list
+- essentials.me
+- essentials.pay
+- essentials.ping
+- essentials.rules
+- essentials.sethome
+- essentials.sethome.bed
+- essentials.sethome.multiple
+- essentials.sethome.multiple.three
+- essentials.spawn
+- essentials.time
+- essentials.tpa
+- essentials.tpaccept
+- essentials.tpahere
+- essentials.tpdeny
+- essentials.tptoggle
+- essentials.warp
+- essentials.warp.list
+- gssentials.announce.join
+- gssentials.announce.quit
+- gssentials.find
+- gssentials.friend
+- gssentials.ignore
+- gssentials.join
+- gssentials.list
+- gssentials.message
+- gssentials.message.global
+- lwc.protect
+- mcmmo.chat.partychat:
+    value: false
+- mcmmo.commands.acrobatics
+- mcmmo.commands.archery
+- mcmmo.commands.axes
+- mcmmo.commands.excavation
+- mcmmo.commands.fishing
+- mcmmo.commands.herbalism
+- mcmmo.commands.inspect
+- mcmmo.commands.mcability
+- mcmmo.commands.mchud
+- mcmmo.commands.mcmmo.description
+- mcmmo.commands.mcmmo.help
+- mcmmo.commands.mcrank
+- mcmmo.commands.mcstats
+- mcmmo.commands.mctop
+- mcmmo.commands.mobhealth
+- mcmmo.commands.repair
+- mcmmo.commands.smelting
+- mcmmo.commands.swords
+- mcmmo.commands.taming
+- mcmmo.commands.unarmed
+- mcmmo.commands.woodcutting
+- mcmmo.mobhealthdisplay
+- mcmmoaction.command.toggle
+- mcmmoaction.display
+- pet.help
+- prefix.5.[&aCitizen&r]
+- shopchest.buy
+- shopchest.create.buy
+- shopchest.create.sell
+- shopchest.sell
+- silkspawners.changetype.bat
+- silkspawners.changetype.chicken
+- silkspawners.changetype.cow
+- silkspawners.changetype.creeper
+- silkspawners.changetype.endermite
+- silkspawners.changetype.mooshroom
+- silkspawners.changetype.pig
+- silkspawners.changetype.rabbit
+- silkspawners.changetype.sheep
+- silkspawners.changetype.skeleton
+- silkspawners.changetype.slime
+- silkspawners.changetype.spider
+- silkspawners.changetype.squid
+- silkspawners.changetype.zombie
+- silkspawners.changetype.zombiepigman
+- silkspawners.explodedrop:
+    value: false
+- silkspawners.info
+- silkspawners.viewtype
+- weight.5

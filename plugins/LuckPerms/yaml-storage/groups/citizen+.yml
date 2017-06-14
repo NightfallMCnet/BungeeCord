@@ -1,0 +1,7 @@
+name: citizen+
+permissions:
+- chairs.sit
+- essentials.hat
+- group.citizen
+- prefix.6.[&2Citizen+&r]
+- weight.6
