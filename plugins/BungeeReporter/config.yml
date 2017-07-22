@@ -1,4 +1,4 @@
-usemysql: 'false'
+usemysql: 'true'
 mysql:
   host: localhost:3306
   user: username

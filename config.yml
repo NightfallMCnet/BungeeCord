@@ -16,31 +16,28 @@ groups:
 servers:
   survival:
     motd: '&1NightfallMC Survival'
-    address: s.nightfallmc.net:25565
-    restricted: false
-  creative:
-    motd: '&1NightfallMC Creative'
-    address: c.nightfallmc.net:25565
+    address: 162.255.214.79:25565
     restricted: false
 timeout: 30000
 listeners:
 - query_port: 25577
-  motd: '&1NightfallMC'
+  motd: |-
+    &2Welcome back to NightfallMC!
+    &9The Night is waiting...
   priorities:
   - survival
   bind_local_address: true
   tab_list: GLOBAL_PING
   query_enabled: false
-  host: play.nightfallmc.net:25565
+  host: 162.255.214.129:25565
   forced_hosts:
     s.nightfallmc.net: survival
     survival.nightfallmc.net: survival
-    c.nightfallmc.net: creative
-    creative.nightfallmc.net: creative
-  max_players: 1
+  max_players: 20
   tab_size: 60
   ping_passthrough: false
   force_default_server: false
+  proxy_protocol: false
 prevent_proxy_connections: false
 player_limit: -1
 online_mode: true

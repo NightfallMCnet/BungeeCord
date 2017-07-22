@@ -107,14 +107,14 @@ components:
     - {text: "&a&lSurvival", icon: "colors/green.png", ping: 0}
     - !players
       playerSet: survival
-      playerComponent: {text: "${player vault_prefix}${player name}", icon: "${player skin}", ping: "${player ping}"}
+      playerComponent: {text: "${player vault_prefix} ${player name}", icon: "${player skin}", ping: "${player ping}"}
       morePlayersComponent: {text: "... and ${other_count} others", icon: "default/players.png", ping: 0}
       minSize: 9
       maxSize: 9
     - {text: "&b&lCreative", icon: "colors/aqua.png", ping: 0}
     - !players
       playerSet: creative
-      playerComponent: {text: "${player vault_prefix}&f${player name}", icon: "${player skin}", ping: "${player ping}"}
+      playerComponent: {text: "${player vault_prefix} ${player name}", icon: "${player skin}", ping: "${player ping}"}
       morePlayersComponent: {text: "... and ${other_count} others", icon: "default/players.png", ping: 0}
       minSize: 9
       maxSize: 9

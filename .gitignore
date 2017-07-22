@@ -1,6 +1,10 @@
 proxy*
+locations.yml
 BungeeCord.jar
 plugins/*.jar
+plugins/bStats/
+plugins/BungeeChat/logs/
+plugins/BungeeChat/userdata/
 plugins/BungeeEssentials/chat/
 plugins/BungeeEssentials/lib
 plugins/BungeeEssentials/*.db
@@ -8,6 +12,7 @@ plugins/BungeeHostLimiter/
 plugins/BungeePerms/debug.log
 plugins/BungeePerms/uuidplayerdb.yml
 plugins/BuyCraftX/cache
+plugins/LuckPerms/luckperms-h2.mv.db
 plugins/LuckPerms/lib/
 plugins/LuckPerms/yaml-storage/actions.*
 plugins/LuckPerms/yaml-storage/uuidcache.txt

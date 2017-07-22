@@ -1,12 +1,20 @@
-# Bungee Chat Configuration by shawn_ian (v7.4)
-# Placeholders can be found here: http://tiny.cc/bungeechatplaceholders
-# In the config file you can change the chat formats and disable and enable feautures.
-# If you found any bugs please report them (See plugin site for more information)
+# Bungee Chat configuration by shawn_ian (v10)
+#
+# Information about the placeholders can be found here:
+# https://github.com/AuraDevelopmentTeam/BungeeChatWiki/wiki/Placeholders
+# You can report bugs or request features here:
+# https://github.com/AuraDevelopmentTeam/BungeeChat2/issues
+# You can contact a developer by joining our Discord server:
+# https://discord.me/bungeechat
+#
+# You can change the settings and messages/formats of the plugin in this file.
+# Please do not change the 'Version' value, or else the plugin might not work.
 
-Version: 7.4
+Version: 10.1
 
 Settings:
-  Features:
+  Modules:
+  #-----------------------#
     Alert:
       enabled: false
       aliases:
@@ -14,20 +22,110 @@ Settings:
         - bc
         - balert
         - bbc
-    Socialspy:
+  #-----------------------#
+    AntiAdvertising:
       enabled: false
+      whitelisted:
+        - www.google.com
+  #-----------------------#
+    AntiDuplication:
+      enabled: false
+      checkPastMessages: 5
+  #-----------------------#
+    AntiSwear:
+      enabled: true
+      freeMatching: false
+      leetSpeak: false
+      ignoreSpaces: false
+      ignoreDuplicateLetters: false
+      words:
+        - R=(f+u+c+k+|f+u+k+|f+v+c+k+|f+u+q+)
+        - R=(cunt|whore|fag|slut|queer|bitch|bastard)
+        - R=\bass\b
+        - R=\basses\b
+        - R=\bbadass\b
+        - R=(n[^a]gg+(a|er|uh|let|lette|lete)|nigg|\bnig\b)
+        - R=(dick|douche|douchebag|duch|duchbag|duche|asshole|dumbass|smartass|douch|douchbag)
+        - R=(piss|\bpist\b|damn|dammit|damnit|shit|sh1t|sheit)
+        - R=\bhell\b
+        - R=(\bsex\b|masturbation|masturbate|jerk off|beat off|vagina|penis|\bvag\b|\bvage\b|boob|\btit\b|\btitt\b|\btitie\b|\btits\b|\btittie\b|\btitties\b|\btity\b|\btitty\b|\btittys\b|hump|clit|clitoris|\bsemen\b|sperm|dildo|\banal\b|anus|blowjob|blow job|handjob|hand job|fingered|fingering|fisted|fisting|nipple|\bnip\b|seminal|\bstd\b|\baids\b|gonorrhea|pube|pubic|orgasm|ejaculate|\bbra\b|panties|underwear|crotch|menstrual|menstruate|sensual|scrotum|\bcock\b|\bcuck\b|\bcum\b|horny|gaysex|jizz|jiz)
+        - R=(kawk|jerk-off|horniest|hotsex|kum|labia|\bmuff\b|porn|p0rn|\bpron\b|pr0n|phonesex|phuck|phuk|pimp|\brape\b|\brapes\b|\braped\b|puss|rectum|schlong|skank|smut|vulva|viagra|wank|wang|willies|willy|xrated|xxx|fetish)
+        - R=(fatass|lmao|lmfao|mofo|m0f0|mof0|m0fo|mo-fo|shemale|\bwtf\b|\bstfu\b|\bgtfo\b|jackass|\bomfg\b|\bwth\b|homo|retard|\btard\b|\bdowny\b|schizo|spazz|sperg)
+      replacement: ""
+  #-----------------------#
+    AutoBroadcast:
+      enabled: false
+      random: false
+      interval: 20
+      messages:
+       - "Message 1"
+       - "Message 2
+with newline!"
+       - "&6Message 3 &lwith &4colors &band &r&0Formats &mtoo!"
+  #-----------------------#
+    ChatLock:
+      enabled: true
+      emptyLinesOnClear: 100
       aliases:
-        - sspy
+        - lockchat
+  #-----------------------#
+    ChatLogging:
+      enabled: true
+      privateMessages: true
+      console: true
+      file: true
+      logFile: "logs/%year%-%month%-%day%-chat.log"
+      filteredCommands:
+      - login
+      - help
+      - pagination
+  #-----------------------#
+    ClearChat:
+      enabled: true
+      emptyLines: 100
+      aliases:
+        - cc
+        - chatclear
+  #-----------------------#
     GlobalChat:
       enabled: true
+      passToClientServer: false
       aliases:
         - g
       default: true
-      Symbol:
+      symbol:
         enabled: false
         symbol: "!"
-    Messanger:
+      serverList:
+        enabled: false
+        list:
+          - Hub1
+          - Hub2
+          - Hub3
+  #-----------------------#
+    HelpOp:
+      enabled: true
+      aliases:
+        - ahelp
+        - helpme
+  #-----------------------#
+    Ignoring:
+      enabled: true
+      aliases: []
+  #-----------------------#
+    JoinMessage:
       enabled: false
+  #-----------------------#
+    LeaveMessage:
+      enabled: false
+  #-----------------------#
+    LocalChat:
+      enabled: false
+      passToClientServer: false
+  #-----------------------#
+    Messenger:
+      enabled: false
+      filterMessages: false
       aliases:
         message:
           - msg
@@ -39,21 +137,24 @@ Settings:
           - r
         msgtoggle:
           - mtoggle
-    StaffChat:
+  #-----------------------#
+    MOTD:
       enabled: false
-      aliases:
-        - sc
-        - s
-        - schat
+      message:
+        - "This is line 1"
+        - "This is line 2"
+        - "Placeholders do work in here %name%"
+        - "&6Color&4codes &land &r&0Formats &mtoo!"
+  #-----------------------#
     Muting:
       enabled: false
       aliases:
         mute:
           - silence
-        tempmute:
-          - tempsilence
         unmute:
           - unsilence
+        tempmute:
+          - tempsilence
       blockedcommands:
         - message
         - msg
@@ -66,103 +167,140 @@ Settings:
         - g
         - reply
         - r
-    JoinMessages:
+      ignoreBukkitLocalChat: false
+      disableWithOtherMutePlugins: true
+  #-----------------------#
+    ServerSwitchMessages:
       enabled: false
-    LeaveMessages:
-      enabled: false
-    HelpOp:
+  #-----------------------#
+    Spy:
       enabled: true
       aliases:
-        - ahelp
-        - helpme
+        socialspy:
+        - sspy
+        localspy:
+        - lspy
+  #-----------------------#
+    StaffChat:
+      enabled: true
+      passToClientServer: false
+      aliases:
+        - a
+        - sc
+        - s
+        - schat
+  #-----------------------#
+    TabCompletion:
+      enabled: true
+  #-----------------------#
     Vanish:
       enabled: false
       aliases:
         - bhide
-    ChatLock:
+  #-----------------------#
+    VersionChecker:
       enabled: true
-      aliases:
-        - chatlock
-    LocalChat:
-      enabled: true
-    ServerSwitchMessages:
+      checkOnAdminLogin: true
+  #-----------------------#
+    WelcomeMessage:
       enabled: false
-    AntiSwear:
-      enabled: false
-      words:
-        - fuck
-        - kut
-        - tyfus
-      replacement: "****"
-    AntiAdvertising:
-      enabled: false
-      whitelisted:
-        - www.google.com
-    Tabcompletion:
-      enabled: true
-    Ignoring:
-      enabled: false
-      aliases: []
-    AntiDuplication:
-      enabled: false
-  ChatLogging:
-    enabled: true
+      message:
+        - "This is line 1"
+        - "This is line 2"
+        - "Placeholders do work in here %name%"
+        - "&6Color&4codes &land &r&0Formats &mtoo!"
+  #-----------------------#
   PermissionsManager:
-    Default-Prefix: "[Member]"
-    Default-Suffix: ""
-    External: NONE
-  RedisFeatures:
-    enabled: false
+    defaultPrefix: "&7[Member]"
+    defaultSuffix: "&r"
+  #-----------------------#
+  ServerAlias:
+    survival: "Survival"
 
 Messages:
-  not-player: "&cYou need to be a player to use this command!"
-  muted: "&cSorry but you can not talk because you are muted!"
-  unmute-not-muted: "&cThis player is not muted!"
-  mute-is-muted: "This player is already muted!"
-  no-reply: "&cYou have nobody to reply."
-  reply-offline: "&cThe player you were chatting with is no longer online."
-  player-not-found: "&cCould not find that player..."
-  enable-global: "&eYou are now talking in &bglobal chat&e!"
-  disable-global: "&eYou are no longer talking in &bglobal chat&e!"
-  message-yourself: "&cYou can not send a message to yourself..."
-  enable-socialspy: "&eSocialspy has been &aenbaled&e!"
-  disable-socialspy: "&eSocialspy has been &cdisabled&e!"
-  enable-staffchat: "&eYou are now talking in &astaffchat&e!"
-  disable-staffchat: "&eYou are no longer talking in &astaffchat&e!"
-  enable-messager: "&eYou have &aenbaled&e messaging!"
-  disable-messager: "&eYou have &cdisabled&e messaging"
-  enable-vanish: "&eYou have &aenbaled&e hide mode!"
-  disable-vanish: "&eYou have &cdisabled&e hide mode!"
-  enable-chatlock: "&eYou have disabled chatting!"
-  disable-chatlock: "&eYou have enabled chatting!"
-  chat-is-locked: "&cYou may not talk now, the chat has been locked!"
-  global-is-default: "&eGlobal chat is already the default chatmode!"
-  incorrect-usage: "&cIncorrect usage! Use this command like this: %command%"
-  unmute: "&eThe player &c%name% &cehas been unmuted!"
+# Channel Type Messages
+  enableGlobal: "&eYou are now talking in &bglobal chat&e!"
+  enableStaffchat: "&eYou are now talking in &astaff chat&e!"
+  enableLocal: "&eYou are now talking in &clocal chat&e!"
+  globalIsDefault: "&eGlobal chat is already the default chatmode!"
+  backToLocal: "&cThe feature linked to the channel you were talking in has been disabled or your permissions have been removed! You are now talking in local chat."
+  notInGlobalServer: "&cGlobal Chat is not enabled on this server..."
+# Messenger Messages
+  messageYourself: "&cYou can not send a private message to yourself..."
+  enableMessager: "&eYou have &aenabled&e messaging!"
+  disableMessager: "&eYou have &cdisabled&e messaging"
+  noReply: "&cYou have nobody to reply."
+  replyOffline: "&cThe player you were chatting with is no longer online."
+  hasMessagerDisabled: "&c%name% has messaging disabled!"
+# Vanish Messages
+  enableVanish: "&eYou have &aenabled&e hide mode!"
+  disableVanish: "&eYou have &cdisabled&e hide mode!"
+# Clear Chat Messages
+  clearedLocal: "&e%name% has cleared the chat locally."
+  clearedGlobal: "&e%name% has cleared the chat globally."
+# Mute Messages
+  muted: "&cSorry but you can not talk because you are muted until %muted_until%!"
+  unmuteNotMuted: "&cThis player is not muted!"
+  muteIsMuted: "This player is already muted!"
+  unmute: "&eThe player &c%name% &ehas been unmuted!"
   mute: "&eThe player &c%name% &ehas been muted!"
-  remove-prefix: "&eRemoved the prefix of &6%name%&e!"
-  has-messager-disabled: "&c%name% has messaging disabled!"
-  not-server: "&c%tserver is not a valid server."
-  anti-advertise: "&cPlease do not advertise!"
-  tempmute: "&eThe player &c%name% &ehas been muted till %mutetime% (UTC +1)"
-  add-ignore: "&eYou have ignored %name%!"
-  remove-ignore: "&eYou have un-ignored %name%!"
-  already-ignore: "&eYou have are already ignoring this player!"
-  ignore-yourself: "&cYou can not ignore yourself!"
-  unignore-yourself: "&cYou can not unignore yourself!"
-  not-ignored: "&cYou have not ignored this user!"
-  anti-duplication: "&cPlease do not spam messages!"
+  tempmute: "&eThe player &c%name% &ehas been muted until %muted_until%"
+# Spy Messages
+  enableSocialSpy: "&eSocialSpy has been &aenabled&e!"
+  disableSocialSpy: "&eSocialSpy has been &cdisabled&e!"
+  enableLocalSpy: "&eLocalSpy has been &aenabled&e!"
+  disableLocalSpy: "&eLocalSpy has been &cdisabled&e!"
+# Error Messages
+  notPlayer: "&cYou need to be a player to use this command!"
+  playerNotFound: "&cCould not find that player..."
+  incorrectUsage: "&cIncorrect usage! Use this command like this: %command%"
+  noPermission: "&cYou do not have the permissions to perform this action!"
+# Ignore Messages
+  hasIgnored: "&c%target_name% is ignoring you..."
+  addIgnore: "&eYou have ignored %name%!"
+  removeIgnore: "&eYou have un-ignored %name%!"
+  alreadyIgnored: "&eYou have are already ignoring this player!"
+  ignoreYourself: "&cYou can not ignore yourself!"
+  unignoreYourself: "&cYou can not unignore yourself!"
+  notIgnored: "&cYou have not ignored this user!"
+  ignoreList: "&eOnline users you ignore: &b%message%&e."
+  ignoreNobody: "&eYou are ignoring &anobody&e that is online!"
+# Filter Messages
+  antiAdvertise: "&cPlease do not advertise!"
+  antiDuplication: "&cPlease do not spam messages!"
+# ChatLock Messages
+  enableChatlock: "&eChatting has been disabled!"
+  disableChatlock: "&eChatting has been enabled!"
+  chatIsLocked: "&cYou may not talk now, the chat has been locked!"
+# Prefix/Suffix Messages
+  prefixRemoved: "&ePrefix of %name% has been removed!"
+  prefixSet: "&ePrefix of %name% has been set to %prefix%."
+  suffixRemoved: "&eSuffix of %name% has been removed!"
+  suffixSet: "&eSuffix of %name% has been set to %suffix%."
+# Update available Message
+  updateAvailable: "&aAn update for Bungee Chat is available! Version &6%message%&a. Download it at: &6https://www.spigotmc.org/resources/bungee-chat.12592/&a"
 
 Formats:
-  alert: "&9ALERT > &c&l%sender: &r%message%"
-  socialspy: "&9SPY > &e%sender_name% &8-> &e%target_name% &8: &r%message%"
-  global: "%sender_prefix% &r%sender_name%: %message%"
-  message-sender: "&6You &8-> &6%target_name% &8: &r%message%"
-  message-target: "&6%sender_name% &8-> &6You&8: &r%message%"
-  staffchat: "&9STAFF > &e%sender_name%: &r%message%"
-  muted: "&cSorry but you can not talk because you are muted!"
-  local-chat: "%sender_prefix% &r%sender_name%: %message%"
-  joinmessage: "&e%sender_name% has joined the network!"
-  leavemessage: "&e%sender_name% has left the network!"
-  helpop: "&2HELPOP > &e%sender_name%: &r%message%"
-  server-switch: "&e%sender_name% has moved to the &c%sender_server% &e server!"
+  alert: "&9ALERT > &c&l%name%: &r%message%"
+  socialSpy: "&9SPY > &e%sender_name% &8-> &e%target_name% &8: &r%message%"
+  localSpy: "&9SPY > &8%servername% > &e%name% &8: &r%message%"
+  globalChat: "%prefix% %displayname%&r: %message%"
+  messageSender: "&6You &8-> &6%target_name% &8: &r%message%"
+  messageTarget: "&6%sender_name% &8-> &6You&8: &r%message%"
+  staffChat: "&b[%displayname%&r&b] %message%"
+  localChat: "%fullname%: %message%"
+  joinMessage: "&e%name% has joined the network!"
+  leaveMessage: "&e%name% has left the network!"
+  helpOp: "&2HELPOP > &e%name%: &r%message%"
+  serverSwitch: "&e%name% has moved to the &c%servername% &eserver!"
+  chatLoggingConsole: "%channel% > %servername% > %name%: %message%"
+  chatLoggingFile: "[%time%]: %channel% > %servername% > %name%(%uuid%): %message%"
+
+AccountDataBase:
+  enabled: true
+  ip: localhost
+  port: 3306
+  database: database
+  user: username
+  password: password
+  tablePrefix: BungeeChat_

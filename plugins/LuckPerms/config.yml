@@ -22,7 +22,7 @@
 # +----------------------------------------------------------------------------------------------+ #
 
 # The name of the server, used for server specific permissions. Set to 'global' to disable.
-server: bungee
+server: global
 
 # If users on this server should have their global permissions applied.
 # If set to false, only server specific permissions will apply for users on this server
@@ -175,7 +175,7 @@ meta-formatting:
 #
 # Fill out connection info below if you're using MySQL, MariaDB, PostgreSQL or MongoDB
 # If your MySQL server supports it, the "mariadb" option is preferred over "mysql".
-storage-method: yaml
+storage-method: mysql
 
 # When using a file-based storage type, LuckPerms can monitor the data files for changes, and then
 # schedule automatic updates when changes are detected.
@@ -199,9 +199,9 @@ data:
   # Specify as "host:port" if differs
   address: localhost
 
-  database: minecraft
-  username: root
-  password: ''
+  database: database
+  username: username
+  password: 'password'
   pool-size: 10 # The size of the MySQL connection pool.
 
   # The prefix for all LuckPerms tables. Change this is you want to use different tables for
@@ -239,7 +239,7 @@ data:
 # -> bungee   uses the plugin messaging channels. Must be enabled on all connected servers to work.
 # -> redis    uses redis pub sub to push changes. Your redis server must be configured below.
 # -> none     nothing
-messaging-service: none
+messaging-service: bungee
 
 # If LuckPerms should automatically push updates after a change has been made with a command.
 auto-push-updates: true
@@ -323,11 +323,11 @@ default-assignments:
 #      lacks: <skyblock/group.sb_level1> & <skyblock/group.sb_level2> & <skyblock/group.sb_level3>
 #    give:
 #      - skyblock/group.sb_level1
-#  rule3:
-#    if:
-#      has-true: <group.default>
-#    take:
-#      - group.default
-#    give:
-#      - group.member
-#    set-primary-group: member
+  rule3:
+    if:
+      has-true: <group.default>
+    take:
+      - group.default
+    give:
+      - group.citizen
+    set-primary-group: citizen

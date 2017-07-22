@@ -1,5 +1,5 @@
 format:
-  alert: '&8[&4!&8] &4{{ MESSAGE }}'
+  alert: '&l[&d&lBROADCAST&r&l] &c{{ MESSAGE }}'
   join: '&e{{ PLAYER }} joined the game'
   quit: '&e{{ PLAYER }} left the game'
   kick: '{{ PLAYER }} was kicked for {{ REASON }}'
@@ -145,73 +145,103 @@ errors:
   sendfail: '&cUnable to send {{ PLAYER }} to {{ SERVER }}.'
   fastrelog: '&cPlease wait before reconnecting!'
 rules:
-- pattern: \bfuck\b
+#- pattern: \b(([\w\d]{2,})\s*.(\.|d.t).{0,5})+(net|com|xyz|me|org|site|pw|top|io|co|biz|eu|uk)\b
+#  handle: ADVERTISEMENT
+#- pattern: \b(([\w\d]{2,})\s*.(\.|dot).{0,5})+(net|com|xyz|me|org|site|pw|top|io|co|biz|eu|uk)
+#  handle: ADVERTISEMENT
+#- pattern: \b.+((\.|dot).+)*(\.|dot)[^\s]*[a-zA-Z]{2,5}
+#  handle: ADVERTISEMENT
+#- pattern: (\d{1,4}\.){3}\d{1,4}
+#  handle: ADVERTISEMENT
+- pattern: (f+u+c+k+|f+u+k+|f+v+c+k+|f+u+q+)
   handle: CURSING
-- pattern: \b(([\w\d]{2,})\s*.(\.|d.t).{0,5})+(net|com|xyz|me|org|site|pw|top|io|co|biz|eu|uk)\b
-  handle: ADVERTISEMENT
-- pattern: \b(([\w\d]{2,})\s*.(\.|dot).{0,5})+(net|com|xyz|me|org|site|pw|top|io|co|biz|eu|uk)
-  handle: ADVERTISEMENT
-- pattern: \b.+((\.|dot).+)*(\.|dot)[^\s]*[a-zA-Z]{2,5}
-  handle: ADVERTISEMENT
-- pattern: (\d{1,4}\.){3}\d{1,4}
-  handle: ADVERTISEMENT
-- pattern: asshole
+- pattern: (n[^a]gg+(a|er|uh)|nigg|\bnig\b)
+  handle: CURSING
+- pattern: (cunt|whore|fag|slut|queer|bitch|bastard)
+  handle: CURSING
+- pattern: \bass\b
   handle: REPLACE
-  replacement: '******'
+  replacement: butt
+- pattern: \basses\b
+  handle: REPLACE
+  replacement: butts
+- pattern: badass
+  handle: REPLACE
+  replacement: (awesome|cool)
+- pattern: \bhell\b
+  handle: REPLACE
+  replacement: heck
+- pattern: (dick|douche|douchebag|duchbag|duch|duchebag|asshole|dumbass|smartass|douche|douch)
+  handle: CURSING
+- pattern: (piss|\bpist\b)
+  handle: CURSING
+- pattern: (shit|sh1t|sheit)
+  handle: CURSING
+- pattern: damn
+  handle: REPLACE
+  replacement: darn
+- pattern: (dammit|damnit)
+  handle: REPLACE
+  replacement: darnit
+- pattern: (\bsex\b|masturbation|masturbate|jerk off|beat off|vagina|penis|\bvag\b|\bvage\b|boob|\btit\b|\btitt\b|\btitie\b|\btits\b|\btittie\b|\btitties\b|\btity\b|\btitty\b|\btittys\b|hump|clit|clitoris|\bsemen\b|sperm|dildo|\banal\b|anus|blowjob|blow job|handjob|hand job|fingered|fingering|fisted|fisting|nipple|\bnip\b|seminal|\bstd\b|\baids\b|gonorrhea|pube|pubic|orgasm|ejaculate|\bbra\b|panties|underwear|crotch|menstrual|menstruate|pregnant|pregnancy|pregnancies|sensual|scrotum|cock|\bcum\b|horny|gaysex|jizz|jiz)
+  handle: CURSING
+- pattern: (kawk|jerk-off|horniest|hotsex|kum|labia|\bmuff\b|porn|p0rn|\bpron\b|pr0n|phonesex|phuck|phuk|pimp|\brape\b|\brapes\b|\braped\b|puss|rectum|schlong|skank|smut|vulva|viagra|wank|wang|willies|willy|xrated|xxx|fetish)
+  handle: CURSING
+- pattern: (fatass|lmao|lmfao|mofo|m0f0|mof0|m0fo|mo-fo|shemale|\bwtf\b|\bstfu\b|\bgtfo\b|jackass|\bomfg\b|\bwth\b)
+  handle: CURSING
+- pattern: \bhomo\b
+  handle: CURSING
+- pattern: (retard|\btard\b|\bdowny\b|schizo|spazz|sperg)
+  handle: CURSING
+- pattern: i hate (darunia18|darunia|darun|daru|dar)
+  handle: REPLACE
+  replacement: Dar is the best admin EVER!
+- pattern: i hate (turtleboyrocks1|turtleboyrocks|turtleboy|turtle|turt)
+  handle: REPLACE
+  replacement: Turt needs to get online more! 
+- pattern: i hate (paulthepoptart|paul)
+  handle: REPLACE
+  replacement: Paul is pretty cool 
+- pattern: i hate (mythking15|mythking|myth)
+  handle: REPLACE
+  replacement: Myth is so cool! 
+- pattern: i hate (thegamer017|thegamer|thegam|gamer|gam|theg)
+  handle: REPLACE
+  replacement: Gamer is better than Nerdey! 
+- pattern: i hate (jshabab|jshab|jsh)
+  handle: REPLACE
+  replacement: Who is jshabab? 
+- pattern: i hate (nerdey_man|tha_nerdy|thanerdy|tha_nerdey|thanerdey|tha_nerd|thanerd|nerdey|nerd)
+  handle: REPLACE
+  replacement: British people suck! 
+- pattern: i hate (1nsyte|1n)
+  handle: REPLACE
+  replacement: 1nsyte is the greatest player ever! 
+- pattern: i hate (hyrulecitizen|hyrule|hyr)
+  handle: REPLACE
+  replacement: ALL HAIL THE CITIZEN OF HYRULE! 
+- pattern: i hate (patronuschaser22|patronuschaser|patronus|patron|pat)
+  handle: REPLACE
+  replacement: I love patronuschaser22 she is the nicest and koolest person I've ever met. 
+- pattern: i hate (majorasrequiem|majoras|majora|maj)
+  handle: REPLACE
+  replacement: 72 hours remain 
+- pattern: i hate (thunder_lane5|thunderlane5|thunderlane|thunder_lane|thunder|thund|thun)
+  handle: REPLACE
+  replacement: I heard Thunder_lane5 can hurl a boulder farther than a catapult 
+- pattern: i hate osuu
+  handle: REPLACE
+  replacement: Is osuu Mod? 
+- pattern: i hate (the filter|the chat filter|this filter|chat filter)
+  handle: REPLACE
+  replacement: This chat filter is the best!
 - pattern: I hate (this|your) server
   handle: REPLACE
   replacement: I love this server
 bannedwords:
-  replace: '*'
+  replace: 'supercalifragilisticexpealidicious'
   list:
-  - anal
-  - anus
-  - aroused
-  - asshole
-  - bastard
-  - bitch
-  - boob
-  - bugger
-  - cock
-  - cum
-  - cunt
-  - dafuq
-  - dick
-  - ffs
-  - fuck
-  - gay
-  - hentai
-  - homo
-  - homosexual
-  - horny
-  - intercourse
-  - jerk
-  - lesbian
-  - milf
-  - nigga
-  - nigger
-  - pedo
-  - penis
-  - piss
-  - prostitute
-  - pussy
-  - rape
-  - rapist
-  - retard
-  - sex
-  - shit
-  - slag
-  - slut
-  - sperm
-  - spunk
-  - testicle
-  - titt
-  - tosser
-  - twat
-  - vagina
-  - wanker
-  - whore
-  - wtf
+  - supercalifragilisticexpialidocious
 announcements:
   vote:
     delay: 30 #Time measured in seconds

@@ -7,7 +7,16 @@ mustGiveReason: false
 # Enable /bat confirm, to confirm command such as action on unknown player.
 confirmCommand: true
 # Enable or disable simple aliases to bypass the /bat prefix for core commands
-simpleAliasesCommands: {}
+simpleAliasesCommands:
+  confirm: false
+  help: false
+  lookup: false
+  backup: false
+  reload: false
+  import: false
+  migrateToMysql: false
+  stafflookup: false
+  modules: false
 # Make the date more readable.If the date correspond to today, tmw or yda, it will replace the date by the corresponding word
 litteralDate: true
 # Enable BETA (experimental) Redis support, requires RedisBungee

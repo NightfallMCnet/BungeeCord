@@ -21,3 +21,4 @@ Language:
   topPlayersBelow: '&6[] &7Top 10 players since %DATE% &6[]'
   onlyPlayer: This command can only be executed by players.
   error: '&7An error occured.'
+  topWait: '&7The Top 10 is loading. Please wait...'

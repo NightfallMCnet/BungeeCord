@@ -28,11 +28,11 @@ charLimit: -1
 # LUCKPERMS   - take information from LuckPerms
 # BUNGEE      - take group from bungee, prefix from config.yml, permissions from bungee
 # This option will be removed soon. Don't use it anymore.
-permissionSource: BUNGEE
+permissionSource: LUCKPERMS
 
 # whether to show players in spectator mode
 # This option will be removed soon. Don't use it anymore.
-showPlayersInGamemode3: true
+showPlayersInGamemode3: false
 
 # if enabled the plugin checks for new versions automatically.
 # Use /BTLP to see whether a new version is available

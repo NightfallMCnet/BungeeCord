@@ -11,7 +11,6 @@ enable:
 - send
 - sendall
 - spy
-- staffchat
 - find
 - ignore
 - join
@@ -25,8 +24,6 @@ enable:
 - log
 - rules
 - rules-chat
-- spam
-- spam-chat
 commands:
   alert:
   - alert
